@@ -1,0 +1,11 @@
+body{
+  margin: 0;
+}
+
+
+.CodeMirror{
+  height: 100% !important;
+  border-bottom-left-radius:5px ;
+  border-bottom-right-radius:5px ;
+
+}
