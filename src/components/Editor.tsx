@@ -21,7 +21,7 @@ const Editor = (props) => {
     <div
       className={`${
         isOpen ? 'flex-grow basis-0': "flex-grow-0"
-      }  flex flex-col p-[.5rem] bg-[hsl(225,6%,25%)] `}
+      } resize-y flex flex-col p-[.5rem] bg-[hsl(225,6%,25%)] `}
     >
       <div className="flex justify-between gap-4 bg-[hsl(225,6%,13%)] rounded-t-md text-white p-[.5rem] pl-[1rem]">
         {displayName}
@@ -37,7 +37,7 @@ const Editor = (props) => {
       <ControlledEditor
         onBeforeChange={handleChange}
         value={value}
-        className="code-mirror-wrapper flex-grow rounded-b-md"
+        className={`code-mirror-wrapper flex-grow rounded-b-md ${!isOpen && 'collapsed'} `}
         options={{
           lineWrapping: true,
           mode: language,

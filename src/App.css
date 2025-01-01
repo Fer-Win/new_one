@@ -5,7 +5,13 @@ body{
 
 .CodeMirror{
   height: 100% !important;
+  max-height: 42vh;
   border-bottom-left-radius:5px ;
   border-bottom-right-radius:5px ;
 
+}
+
+
+.collapsed .CodeMirror-scroll{
+  position: absolute;
 }
